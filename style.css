@@ -1,0 +1,251 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Roboto+Slab:wght@300;400;600&display=Parisienne&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+ 
+}
+
+.header {
+    background-color: #faebd7;
+}
+.nav-logo {
+    font-family: 'Parisienne', cursive;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+   
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #101010;
+    
+}
+.img {
+   height: 100vh;
+   width: 100%;
+    object-fit: cover;
+  object-position: center;
+  
+    
+}
+
+main {
+    padding: 20px;
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.content {
+    
+    flex-grow: 3;
+  margin-right: 10px;
+  position: relative;
+  width: 70%;
+  }
+
+  aside {
+    flex-grow: 2;
+    text-align: center;
+    position: relative;
+    max-height: 500px;
+    
+  }
+
+  p {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+  }
+
+.card {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    margin-top: 5px;
+   
+  }
+
+
+  .gambar {
+    margin-bottom: 10px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .biodata {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .textt {
+    text-align: left;
+  }
+  
+  .value {
+    text-align: left;
+    padding-left: 3px;
+  }
+
+
+   footer{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: #faebd7;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+      
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color:#faebd7 ;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+        main {
+            display: block;
+        }
+    .content {
+    
+        width: 100%;
+      
+      }
+    
+      aside {
+        width: 100%;
+      }
+
+}
